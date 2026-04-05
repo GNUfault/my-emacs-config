@@ -27,6 +27,9 @@
                    "%b"))
         (:eval (if (buffer-modified-p) "*" ""))))
 
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+
 (cua-mode 1)
 (setq shift-select-mode t)
 
