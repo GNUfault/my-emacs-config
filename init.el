@@ -8,6 +8,9 @@
 (global-hl-line-mode 1)
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
 
+(set-fontset-font t 'symbol (font-spec :family "Monospace") nil 'prepend)
+(setq use-default-font-for-symbols t)
+
 (setq initial-scratch-message 
 ";; The Four Essential Freedoms:
 ;;
@@ -40,6 +43,8 @@
 (global-set-key (kbd "C-f") 'isearch-forward)
 (global-set-key (kbd "C-S-f") 'query-replace)
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+
+(global-set-key (kbd "C-h") 'hexl-mode)
 
 (global-set-key (kbd "C-t") (lambda () (interactive) (split-window-right) (other-window 1) (eshell)))
 
