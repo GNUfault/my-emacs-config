@@ -1,5 +1,4 @@
 (setq inhibit-startup-screen t)
-(setq initial-scratch-message ";; Welcome to GNU Emacs!")
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
@@ -8,6 +7,15 @@
 (load-theme 'modus-vivendi t)
 (global-hl-line-mode 1)
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+
+(setq initial-scratch-message 
+";; The Four Essential Freedoms:
+;;
+;; Freedom 0: The freedom to run the program as you wish, for any purpose.
+;; Freedom 1: The freedom to study how the program works, and change it so it does your computing as you wish.
+;; Freedom 2: The freedom to redistribute copies so you can help others.
+;; Freedom 3: The freedom to distribute copies of your modified versions to others.
+")
 
 (setq frame-title-format
       '("" invocation-name ": " 
