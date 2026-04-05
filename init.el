@@ -44,8 +44,6 @@
 (global-set-key (kbd "C-S-f") 'query-replace)
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
-(global-set-key (kbd "C-h") 'hexl-mode)
-
 (global-set-key (kbd "C-t") (lambda () (interactive) (split-window-right) (other-window 1) (eshell)))
 
 (windmove-default-keybindings 'meta)
