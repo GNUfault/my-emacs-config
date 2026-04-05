@@ -8,7 +8,7 @@
 (global-hl-line-mode 1)
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
 
-(set-fontset-font t 'symbol (font-spec :family "Monospace") nil 'prepend)
+(set-face-attribute 'default nil :font "Source Code Pro-10")
 (setq use-default-font-for-symbols t)
 
 (setq initial-scratch-message 
